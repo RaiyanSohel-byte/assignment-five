@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="https://kit.fontawesome.com/050fdada3b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>জরুরি সেবা ডায়রেক্টরি</title>
+  </head>
+  <body class="inter">
+    <!-- navbar -->
+    <nav
+      class="lg:flex justify-between items-center lg:px-[60px] lg:py-[15px] px-[20px] py-[20px]"
+    >
+      <!-- logo -->
+      <div
+        class="flex mb-[20px] lg:justify-normal justify-center text-[#006747] items-center gap-[10px] font-extrabold lg:w-[195px] text-xl"
+      >
+        <img class="w-[50px] h-[50px]" src="assets/logo.png" alt="" />
+        <p>Emergency Service</p>
+      </div>
+      <!-- buttons -->
+      <div
+        class="flex gap-[10px] px-[20px] lg:px-0 lg:gap-[20px] justify-center"
+      >
+        <button
+          class="flex gap-[10px] bg-[#edfff1] rounded-[50px] px-[15px] py-[5px] lg:px-[35px] lg:py-[14px] font-bold"
+        >
+          0 <img class="w-[20px]" src="assets/heart.png" alt="" />
+        </button>
+        <button
+          class="flex gap-[10px] bg-[#edfff1] rounded-[50px] px-[15px] py-[5px] lg:px-[35px] lg:py-[14px] font-bold"
+        >
+          100 <img class="w-[20px]" src="assets/coin.png" alt="" />
+        </button>
+        <button
+          class="text-white bg-[#00a63e] rounded-[50px] px-[15px] py-[5px] lg:px-[35px] lg:py-[14px] font-bold"
+        >
+          2 Copy
+        </button>
+      </div>
+    </nav>
+
+    <!-- hero section -->
+    <section
+      class="text-center py-[21px] text-white bg-gradient-to-r from-[#013223] via-[#006747] to-[#006747]"
+    >
+      <img
+        class="w-[92px] h-[92px] mx-auto"
+        src="assets/logo-dark.png"
+        alt=""
+      />
+      <h3 class="mt-[12px] lg:text-[40px] text-[24px] font-semibold">
+        জরুরি সেবা ডিরেক্টরি
+      </h3>
+      <p class="lg:text-[20px] font-semibold mt-[12px]">
+        Government Emergency Services at Your Fingertip – A Project by
+        Government of the People’s Republic of Bangladesh
+      </p>
+    </section>
+
+    <!-- card section -->
+    <section class="bg-[#f5fff6] py-[20px] lg:py-[48px]">
+      <div class="lg:grid grid-cols-4 gap-[30px] lg:px-[58px]">
+        <figure
+          class="bg-white p-[20px] mb-[30px] lg:mb-0 lg:p-[32px] rounded-[12px] shadow-lg"
+        >
+          <div class="flex items-center justify-between mb-[16px]">
+            <div
+              class="bg-red-200 w-[48px] h-[48px] lg:w-[60px] lg:h-[60px] flex justify-center items-center rounded-[16px]"
+            >
+              <img
+                class="w-[24px] h-[24px] lg:w-[32px] lg:h-[32px]"
+                src="assets/emergency.png"
+                alt=""
+              />
+            </div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-bold">জাতীয় জরুরি সেবা</h3>
+            <p class="mb-[24px] text-lg text-[#5c5c5c]">National Emergency</p>
+            <h3 class="text-[28px] font-bold">999</h3>
+            <button
+              class="bg-[#f2f2f2] px-[16px] py-[6px] rounded-[50px] text-[16px] text-[#5c5c5c]"
+            >
+              সার্বজনীন
+            </button>
+          </div>
+          <div class="flex gap-3 mt-[24px]">
+            <button
+              class="flex-1 border border-[#d4d6d5] rounded-[8px] text-[1rem] text-[#5c5c5c] py-[6px] lg:py-[10px]"
+            >
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+            <button
+              class="flex-1 text-white bg-[#00a63e] rounded-[8px] text-[1rem] py-[6px] lg:py-[10px]"
+            >
+              <i class="fa-solid fa-phone"></i> Call
+            </button>
+          </div>
+        </figure>
+        <figure
+          class="bg-white p-[20px] mb-[30px] lg:mb-0 lg:p-[32px] rounded-[12px] shadow-lg"
+        >
+          <div class="flex items-center justify-between mb-[16px]">
+            <div
+              class="bg-red-200 w-[48px] h-[48px] lg:w-[60px] lg:h-[60px] flex justify-center items-center rounded-[16px]"
+            >
+              <img
+                class="w-[24px] h-[24px] lg:w-[32px] lg:h-[32px]"
+                src="assets/emergency.png"
+                alt=""
+              />
+            </div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-bold">জাতীয় জরুরি সেবা</h3>
+            <p class="mb-[24px] text-lg text-[#5c5c5c]">National Emergency</p>
+            <h3 class="text-[28px] font-bold">999</h3>
+            <button
+              class="bg-[#f2f2f2] px-[16px] py-[6px] rounded-[50px] text-[16px] text-[#5c5c5c]"
+            >
+              সার্বজনীন
+            </button>
+          </div>
+          <div class="flex gap-3 mt-[24px]">
+            <button
+              class="flex-1 border border-[#d4d6d5] rounded-[8px] text-[1rem] text-[#5c5c5c] py-[6px] lg:py-[10px]"
+            >
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+            <button
+              class="flex-1 text-white bg-[#00a63e] rounded-[8px] text-[1rem] py-[6px] lg:py-[10px]"
+            >
+              <i class="fa-solid fa-phone"></i> Call
+            </button>
+          </div>
+        </figure>
+        <figure
+          class="bg-white p-[20px] mb-[30px] lg:mb-0 lg:p-[32px] rounded-[12px] shadow-lg"
+        >
+          <div class="flex items-center justify-between mb-[16px]">
+            <div
+              class="bg-red-200 w-[48px] h-[48px] lg:w-[60px] lg:h-[60px] flex justify-center items-center rounded-[16px]"
+            >
+              <img
+                class="w-[24px] h-[24px] lg:w-[32px] lg:h-[32px]"
+                src="assets/emergency.png"
+                alt=""
+              />
+            </div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-bold">জাতীয় জরুরি সেবা</h3>
+            <p class="mb-[24px] text-lg text-[#5c5c5c]">National Emergency</p>
+            <h3 class="text-[28px] font-bold">999</h3>
+            <button
+              class="bg-[#f2f2f2] px-[16px] py-[6px] rounded-[50px] text-[16px] text-[#5c5c5c]"
+            >
+              সার্বজনীন
+            </button>
+          </div>
+          <div class="flex gap-3 mt-[24px]">
+            <button
+              class="flex-1 border border-[#d4d6d5] rounded-[8px] text-[1rem] text-[#5c5c5c] py-[6px] lg:py-[10px]"
+            >
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+            <button
+              class="flex-1 text-white bg-[#00a63e] rounded-[8px] text-[1rem] py-[6px] lg:py-[10px]"
+            >
+              <i class="fa-solid fa-phone"></i> Call
+            </button>
+          </div>
+        </figure>
+        <figure
+          class="hidden lg:block bg-white p-[20px] mb-[30px] lg:p-[32px] rounded-[12px] shadow-lg row-span-4"
+        >
+          <div class="flex justify-between items-center rounded-[12px]">
+            <h3 class="text-xl font-semibold">
+              <i class="fa-solid fa-clock-rotate-left"></i> Call History
+            </h3>
+            <button
+              class="text-white bg-[#00a63e] px-[36px] py-[14px] text-[1rem] rounded-[50px]"
+            >
+              Clear
+            </button>
+          </div>
+          <div
+            class="rounded-[8px] px-[18px] py-[16px] my-[16px] flex justify-between items-center bg-gray-100"
+          >
+            <div>
+              <h3 class="text-sm font-semibold">ফায়ার সার্ভিস</h3>
+              <p class="text-[#5c5c5c] font-semibold">999</p>
+            </div>
+            <div class="text-xs">11:36:58 AM</div>
+          </div>
+        </figure>
+        <figure
+          class="bg-white p-[20px] mb-[30px] lg:mb-0 lg:p-[32px] rounded-[12px] shadow-lg"
+        >
+          <div class="flex items-center justify-between mb-[16px]">
+            <div
+              class="bg-red-200 w-[48px] h-[48px] lg:w-[60px] lg:h-[60px] flex justify-center items-center rounded-[16px]"
+            >
+              <img
+                class="w-[24px] h-[24px] lg:w-[32px] lg:h-[32px]"
+                src="assets/emergency.png"
+                alt=""
+              />
+            </div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-bold">জাতীয় জরুরি সেবা</h3>
+            <p class="mb-[24px] text-lg text-[#5c5c5c]">National Emergency</p>
+            <h3 class="text-[28px] font-bold">999</h3>
+            <button
+              class="bg-[#f2f2f2] px-[16px] py-[6px] rounded-[50px] text-[16px] text-[#5c5c5c]"
+            >
+              সার্বজনীন
+            </button>
+          </div>
+          <div class="flex gap-3 mt-[24px]">
+            <button
+              class="flex-1 border border-[#d4d6d5] rounded-[8px] text-[1rem] text-[#5c5c5c] py-[6px] lg:py-[10px]"
+            >
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+            <button
+              class="flex-1 text-white bg-[#00a63e] rounded-[8px] text-[1rem] py-[6px] lg:py-[10px]"
+            >
+              <i class="fa-solid fa-phone"></i> Call
+            </button>
+          </div>
+        </figure>
+        <figure
+          class="bg-white p-[20px] mb-[30px] lg:mb-0 lg:p-[32px] rounded-[12px] shadow-lg"
+        >
+          <div class="flex items-center justify-between mb-[16px]">
+            <div
+              class="bg-red-200 w-[48px] h-[48px] lg:w-[60px] lg:h-[60px] flex justify-center items-center rounded-[16px]"
+            >
+              <img
+                class="w-[24px] h-[24px] lg:w-[32px] lg:h-[32px]"
+                src="assets/emergency.png"
+                alt=""
+              />
+            </div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-bold">জাতীয় জরুরি সেবা</h3>
+            <p class="mb-[24px] text-lg text-[#5c5c5c]">National Emergency</p>
+            <h3 class="text-[28px] font-bold">999</h3>
+            <button
+              class="bg-[#f2f2f2] px-[16px] py-[6px] rounded-[50px] text-[16px] text-[#5c5c5c]"
+            >
+              সার্বজনীন
+            </button>
+          </div>
+          <div class="flex gap-3 mt-[24px]">
+            <button
+              class="flex-1 border border-[#d4d6d5] rounded-[8px] text-[1rem] text-[#5c5c5c] py-[6px] lg:py-[10px]"
+            >
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+            <button
+              class="flex-1 text-white bg-[#00a63e] rounded-[8px] text-[1rem] py-[6px] lg:py-[10px]"
+            >
+              <i class="fa-solid fa-phone"></i> Call
+            </button>
+          </div>
+        </figure>
+        <figure
+          class="bg-white p-[20px] mb-[30px] lg:mb-0 lg:p-[32px] rounded-[12px] shadow-lg"
+        >
+          <div class="flex items-center justify-between mb-[16px]">
+            <div
+              class="bg-red-200 w-[48px] h-[48px] lg:w-[60px] lg:h-[60px] flex justify-center items-center rounded-[16px]"
+            >
+              <img
+                class="w-[24px] h-[24px] lg:w-[32px] lg:h-[32px]"
+                src="assets/emergency.png"
+                alt=""
+              />
+            </div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-bold">জাতীয় জরুরি সেবা</h3>
+            <p class="mb-[24px] text-lg text-[#5c5c5c]">National Emergency</p>
+            <h3 class="text-[28px] font-bold">999</h3>
+            <button
+              class="bg-[#f2f2f2] px-[16px] py-[6px] rounded-[50px] text-[16px] text-[#5c5c5c]"
+            >
+              সার্বজনীন
+            </button>
+          </div>
+          <div class="flex gap-3 mt-[24px]">
+            <button
+              class="flex-1 border border-[#d4d6d5] rounded-[8px] text-[1rem] text-[#5c5c5c] py-[6px] lg:py-[10px]"
+            >
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+            <button
+              class="flex-1 text-white bg-[#00a63e] rounded-[8px] text-[1rem] py-[6px] lg:py-[10px]"
+            >
+              <i class="fa-solid fa-phone"></i> Call
+            </button>
+          </div>
+        </figure>
+        <figure
+          class="bg-white p-[20px] mb-[30px] lg:mb-0 lg:p-[32px] rounded-[12px] shadow-lg"
+        >
+          <div class="flex items-center justify-between mb-[16px]">
+            <div
+              class="bg-red-200 w-[48px] h-[48px] lg:w-[60px] lg:h-[60px] flex justify-center items-center rounded-[16px]"
+            >
+              <img
+                class="w-[24px] h-[24px] lg:w-[32px] lg:h-[32px]"
+                src="assets/emergency.png"
+                alt=""
+              />
+            </div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-bold">জাতীয় জরুরি সেবা</h3>
+            <p class="mb-[24px] text-lg text-[#5c5c5c]">National Emergency</p>
+            <h3 class="text-[28px] font-bold">999</h3>
+            <button
+              class="bg-[#f2f2f2] px-[16px] py-[6px] rounded-[50px] text-[16px] text-[#5c5c5c]"
+            >
+              সার্বজনীন
+            </button>
+          </div>
+          <div class="flex gap-3 mt-[24px]">
+            <button
+              class="flex-1 border border-[#d4d6d5] rounded-[8px] text-[1rem] text-[#5c5c5c] py-[6px] lg:py-[10px]"
+            >
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+            <button
+              class="flex-1 text-white bg-[#00a63e] rounded-[8px] text-[1rem] py-[6px] lg:py-[10px]"
+            >
+              <i class="fa-solid fa-phone"></i> Call
+            </button>
+          </div>
+        </figure>
+        <figure
+          class="bg-white p-[20px] mb-[30px] lg:mb-0 lg:p-[32px] rounded-[12px] shadow-lg"
+        >
+          <div class="flex items-center justify-between mb-[16px]">
+            <div
+              class="bg-red-200 w-[48px] h-[48px] lg:w-[60px] lg:h-[60px] flex justify-center items-center rounded-[16px]"
+            >
+              <img
+                class="w-[24px] h-[24px] lg:w-[32px] lg:h-[32px]"
+                src="assets/emergency.png"
+                alt=""
+              />
+            </div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-bold">জাতীয় জরুরি সেবা</h3>
+            <p class="mb-[24px] text-lg text-[#5c5c5c]">National Emergency</p>
+            <h3 class="text-[28px] font-bold">999</h3>
+            <button
+              class="bg-[#f2f2f2] px-[16px] py-[6px] rounded-[50px] text-[16px] text-[#5c5c5c]"
+            >
+              সার্বজনীন
+            </button>
+          </div>
+          <div class="flex gap-3 mt-[24px]">
+            <button
+              class="flex-1 border border-[#d4d6d5] rounded-[8px] text-[1rem] text-[#5c5c5c] py-[6px] lg:py-[10px]"
+            >
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+            <button
+              class="flex-1 text-white bg-[#00a63e] rounded-[8px] text-[1rem] py-[6px] lg:py-[10px]"
+            >
+              <i class="fa-solid fa-phone"></i> Call
+            </button>
+          </div>
+        </figure>
+        <figure
+          class="bg-white p-[20px] mb-[30px] lg:mb-0 lg:p-[32px] rounded-[12px] shadow-lg"
+        >
+          <div class="flex items-center justify-between mb-[16px]">
+            <div
+              class="bg-red-200 w-[48px] h-[48px] lg:w-[60px] lg:h-[60px] flex justify-center items-center rounded-[16px]"
+            >
+              <img
+                class="w-[24px] h-[24px] lg:w-[32px] lg:h-[32px]"
+                src="assets/emergency.png"
+                alt=""
+              />
+            </div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-bold">জাতীয় জরুরি সেবা</h3>
+            <p class="mb-[24px] text-lg text-[#5c5c5c]">National Emergency</p>
+            <h3 class="text-[28px] font-bold">999</h3>
+            <button
+              class="bg-[#f2f2f2] px-[16px] py-[6px] rounded-[50px] text-[16px] text-[#5c5c5c]"
+            >
+              সার্বজনীন
+            </button>
+          </div>
+          <div class="flex gap-3 mt-[24px]">
+            <button
+              class="flex-1 border border-[#d4d6d5] rounded-[8px] text-[1rem] text-[#5c5c5c] py-[6px] lg:py-[10px]"
+            >
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+            <button
+              class="flex-1 text-white bg-[#00a63e] rounded-[8px] text-[1rem] py-[6px] lg:py-[10px]"
+            >
+              <i class="fa-solid fa-phone"></i> Call
+            </button>
+          </div>
+        </figure>
+        <figure
+          class="lg:hidden bg-white p-[20px] mb-[30px] lg:p-[32px] rounded-[12px] shadow-lg row-span-4"
+        >
+          <div class="flex justify-between items-center rounded-[12px]">
+            <h3 class="text-xl font-semibold">
+              <i class="fa-solid fa-clock-rotate-left"></i> Call History
+            </h3>
+            <button
+              class="text-white bg-[#00a63e] px-[36px] py-[14px] text-[1rem] rounded-[50px]"
+            >
+              Clear
+            </button>
+          </div>
+          <div
+            class="rounded-[8px] px-[18px] py-[16px] my-[16px] flex justify-between items-center bg-gray-100"
+          >
+            <div>
+              <h3 class="text-sm font-semibold">ফায়ার সার্ভিস</h3>
+              <p class="text-[#5c5c5c] font-semibold">999</p>
+            </div>
+            <div class="text-xs">11:36:58 AM</div>
+          </div>
+        </figure>
+      </div>
+    </section>
+  </body>
+</html>
