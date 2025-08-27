@@ -37,9 +37,9 @@ callButton.forEach((btn) => {
           </div>
           <div class="text-xs">${time}</div>
         </div>`;
-      alert(`Calling ${serviceName} ${serviceNum}`);
+      alert(`📞 Calling ${serviceName} ${serviceNum}`);
     } else {
-      alert("Not enough coin");
+      alert("❌ আপনার পর্যাপ্ত কয়েন নেই! কল করতে কমপক্ষে ২০ কয়েন লাগবে।");
     }
   });
 });
@@ -56,11 +56,12 @@ const copyButton = document.querySelectorAll(`.copy-button`);
 copyButton.forEach((btn) => {
   btn.addEventListener("click", () => {
     const copyNum = document.getElementById("copy-number");
-    alert("Number Copied!");
+
     copyCount++;
     copyNum.innerText = `${copyCount} Copy`;
     const card = btn.closest("figure");
     const serviceNum = card.querySelector(`.service-number`).innerText;
     navigator.clipboard.writeText(serviceNum);
+    alert(`নম্বর কপি হয়েছে : ${serviceNum}`);
   });
 });
