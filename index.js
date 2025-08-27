@@ -59,5 +59,8 @@ copyButton.forEach((btn) => {
     alert("Number Copied!");
     copyCount++;
     copyNum.innerText = `${copyCount} Copy`;
+    const card = btn.closest("figure");
+    const serviceNum = card.querySelector(`.service-number`).innerText;
+    navigator.clipboard.writeText(serviceNum);
   });
 });
