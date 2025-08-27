@@ -23,7 +23,7 @@
     >
       <!-- logo -->
       <div
-        class="flex mb-[20px] lg:justify-normal justify-center text-[#006747] items-center gap-[10px] font-extrabold lg:w-[195px] text-xl"
+        class="flex mb-[20px] lg:justify-normal justify-center items-center text-[#006747] items-center gap-[10px] font-extrabold lg:w-[195px] text-xl"
       >
         <img class="w-[50px] h-[50px]" src="assets/logo.png" alt="" />
         <p>Emergency Service</p>
@@ -69,10 +69,12 @@
     </section>
 
     <!-- card section -->
-    <section class="bg-[#f5fff6] py-[20px] lg:py-[48px]">
-      <div class="lg:grid grid-cols-4 gap-[30px] lg:px-[58px]">
+    <section
+      class="bg-[#f5fff6] px-[20px] py-[20px] lg:py-[48px] lg:flex gap-[50px] mx-auto justify-center"
+    >
+      <div class="lg:grid grid-cols-3 gap-[50px] mx-auto">
         <figure
-          class="bg-white p-[20px] mb-[30px] lg:mb-0 lg:p-[32px] rounded-[12px] shadow-lg"
+          class="lg:w-[350px] bg-white p-[20px] mb-[30px] lg:mb-0 lg:p-[32px] rounded-[12px] shadow-lg"
         >
           <div class="flex items-center justify-between mb-[16px]">
             <div
@@ -110,28 +112,28 @@
           </div>
         </figure>
         <figure
-          class="bg-white p-[20px] mb-[30px] lg:mb-0 lg:p-[32px] rounded-[12px] shadow-lg"
+          class="lg:w-[350px] bg-white p-[20px] mb-[30px] lg:mb-0 lg:p-[32px] rounded-[12px] shadow-lg"
         >
           <div class="flex items-center justify-between mb-[16px]">
             <div
-              class="bg-red-200 w-[48px] h-[48px] lg:w-[60px] lg:h-[60px] flex justify-center items-center rounded-[16px]"
+              class="bg-[#dfefff] w-[48px] h-[48px] lg:w-[60px] lg:h-[60px] flex justify-center items-center rounded-[16px]"
             >
               <img
                 class="w-[24px] h-[24px] lg:w-[32px] lg:h-[32px]"
-                src="assets/emergency.png"
+                src="assets/police.png"
                 alt=""
               />
             </div>
             <i class="fa-regular fa-heart"></i>
           </div>
           <div>
-            <h3 class="text-[18px] font-bold">জাতীয় জরুরি সেবা</h3>
-            <p class="mb-[24px] text-lg text-[#5c5c5c]">National Emergency</p>
+            <h3 class="text-[18px] font-bold">পুলিশ</h3>
+            <p class="mb-[24px] text-lg text-[#5c5c5c]">Police</p>
             <h3 class="text-[28px] font-bold">999</h3>
             <button
               class="bg-[#f2f2f2] px-[16px] py-[6px] rounded-[50px] text-[16px] text-[#5c5c5c]"
             >
-              সার্বজনীন
+              পুলিশ
             </button>
           </div>
           <div class="flex gap-3 mt-[24px]">
@@ -148,7 +150,7 @@
           </div>
         </figure>
         <figure
-          class="bg-white p-[20px] mb-[30px] lg:mb-0 lg:p-[32px] rounded-[12px] shadow-lg"
+          class="lg:w-[350px] bg-white p-[20px] mb-[30px] lg:mb-0 lg:p-[32px] rounded-[12px] shadow-lg"
         >
           <div class="flex items-center justify-between mb-[16px]">
             <div
@@ -156,20 +158,59 @@
             >
               <img
                 class="w-[24px] h-[24px] lg:w-[32px] lg:h-[32px]"
-                src="assets/emergency.png"
+                src="assets/fire-service.png"
                 alt=""
               />
             </div>
             <i class="fa-regular fa-heart"></i>
           </div>
           <div>
-            <h3 class="text-[18px] font-bold">জাতীয় জরুরি সেবা</h3>
-            <p class="mb-[24px] text-lg text-[#5c5c5c]">National Emergency</p>
+            <h3 class="text-[18px] font-bold">ফায়ার সার্ভিস</h3>
+            <p class="mb-[24px] text-lg text-[#5c5c5c]">Fire Service</p>
             <h3 class="text-[28px] font-bold">999</h3>
             <button
               class="bg-[#f2f2f2] px-[16px] py-[6px] rounded-[50px] text-[16px] text-[#5c5c5c]"
             >
-              সার্বজনীন
+              ফায়ার
+            </button>
+          </div>
+          <div class="flex gap-3 mt-[24px]">
+            <button
+              class="flex-1 border border-[#d4d6d5] rounded-[8px] text-[1rem] text-[#5c5c5c] py-[6px] lg:py-[10px]"
+            >
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+            <button
+              class="flex-1 text-white bg-[#00a63e] rounded-[8px] text-[1rem] py-[6px] lg:py-[10px]"
+            >
+              <i class="fa-solid fa-phone"></i> Call
+            </button>
+          </div>
+        </figure>
+
+        <figure
+          class="lg:w-[350px] bg-white p-[20px] mb-[30px] lg:mb-0 lg:p-[32px] rounded-[12px] shadow-lg"
+        >
+          <div class="flex items-center justify-between mb-[16px]">
+            <div
+              class="bg-red-200 w-[48px] h-[48px] lg:w-[60px] lg:h-[60px] flex justify-center items-center rounded-[16px]"
+            >
+              <img
+                class="w-[24px] h-[24px] lg:w-[32px] lg:h-[32px]"
+                src="assets/ambulance.png"
+                alt=""
+              />
+            </div>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-bold">অ্যাম্বুলেন্স</h3>
+            <p class="mb-[24px] text-lg text-[#5c5c5c]">Ambulance</p>
+            <h3 class="text-[28px] font-bold">1994-999999</h3>
+            <button
+              class="bg-[#f2f2f2] px-[16px] py-[6px] rounded-[50px] text-[16px] text-[#5c5c5c]"
+            >
+              স্বাস্থ্য
             </button>
           </div>
           <div class="flex gap-3 mt-[24px]">
@@ -186,30 +227,7 @@
           </div>
         </figure>
         <figure
-          class="hidden lg:block bg-white p-[20px] mb-[30px] lg:p-[32px] rounded-[12px] shadow-lg row-span-4"
-        >
-          <div class="flex justify-between items-center rounded-[12px]">
-            <h3 class="text-xl font-semibold">
-              <i class="fa-solid fa-clock-rotate-left"></i> Call History
-            </h3>
-            <button
-              class="text-white bg-[#00a63e] px-[36px] py-[14px] text-[1rem] rounded-[50px]"
-            >
-              Clear
-            </button>
-          </div>
-          <div
-            class="rounded-[8px] px-[18px] py-[16px] my-[16px] flex justify-between items-center bg-gray-100"
-          >
-            <div>
-              <h3 class="text-sm font-semibold">ফায়ার সার্ভিস</h3>
-              <p class="text-[#5c5c5c] font-semibold">999</p>
-            </div>
-            <div class="text-xs">11:36:58 AM</div>
-          </div>
-        </figure>
-        <figure
-          class="bg-white p-[20px] mb-[30px] lg:mb-0 lg:p-[32px] rounded-[12px] shadow-lg"
+          class="lg:w-[350px] bg-white p-[20px] mb-[30px] lg:mb-0 lg:p-[32px] rounded-[12px] shadow-lg"
         >
           <div class="flex items-center justify-between mb-[16px]">
             <div
@@ -224,13 +242,15 @@
             <i class="fa-regular fa-heart"></i>
           </div>
           <div>
-            <h3 class="text-[18px] font-bold">জাতীয় জরুরি সেবা</h3>
-            <p class="mb-[24px] text-lg text-[#5c5c5c]">National Emergency</p>
-            <h3 class="text-[28px] font-bold">999</h3>
+            <h3 class="text-[18px] font-bold">নারী ও শিশু সহায়তা</h3>
+            <p class="mb-[24px] text-lg text-[#5c5c5c]">
+              Women & Child Helpline
+            </p>
+            <h3 class="text-[28px] font-bold">109</h3>
             <button
               class="bg-[#f2f2f2] px-[16px] py-[6px] rounded-[50px] text-[16px] text-[#5c5c5c]"
             >
-              সার্বজনীন
+              সহায়তা
             </button>
           </div>
           <div class="flex gap-3 mt-[24px]">
@@ -247,7 +267,7 @@
           </div>
         </figure>
         <figure
-          class="bg-white p-[20px] mb-[30px] lg:mb-0 lg:p-[32px] rounded-[12px] shadow-lg"
+          class="lg:w-[350px] bg-white p-[20px] mb-[30px] lg:mb-0 lg:p-[32px] rounded-[12px] shadow-lg"
         >
           <div class="flex items-center justify-between mb-[16px]">
             <div
@@ -262,13 +282,13 @@
             <i class="fa-regular fa-heart"></i>
           </div>
           <div>
-            <h3 class="text-[18px] font-bold">জাতীয় জরুরি সেবা</h3>
-            <p class="mb-[24px] text-lg text-[#5c5c5c]">National Emergency</p>
-            <h3 class="text-[28px] font-bold">999</h3>
+            <h3 class="text-[18px] font-bold">দুদক</h3>
+            <p class="mb-[24px] text-lg text-[#5c5c5c]">Anti-Corruption</p>
+            <h3 class="text-[28px] font-bold">106</h3>
             <button
               class="bg-[#f2f2f2] px-[16px] py-[6px] rounded-[50px] text-[16px] text-[#5c5c5c]"
             >
-              সার্বজনীন
+              সরকারি
             </button>
           </div>
           <div class="flex gap-3 mt-[24px]">
@@ -285,7 +305,7 @@
           </div>
         </figure>
         <figure
-          class="bg-white p-[20px] mb-[30px] lg:mb-0 lg:p-[32px] rounded-[12px] shadow-lg"
+          class="lg:w-[350px] bg-white p-[20px] mb-[30px] lg:mb-0 lg:p-[32px] rounded-[12px] shadow-lg"
         >
           <div class="flex items-center justify-between mb-[16px]">
             <div
@@ -300,13 +320,13 @@
             <i class="fa-regular fa-heart"></i>
           </div>
           <div>
-            <h3 class="text-[18px] font-bold">জাতীয় জরুরি সেবা</h3>
-            <p class="mb-[24px] text-lg text-[#5c5c5c]">National Emergency</p>
-            <h3 class="text-[28px] font-bold">999</h3>
+            <h3 class="text-[18px] font-bold">বিদ্যুৎ বিভ্রাট</h3>
+            <p class="mb-[24px] text-lg text-[#5c5c5c]">Electricity Outage</p>
+            <h3 class="text-[28px] font-bold">16216</h3>
             <button
               class="bg-[#f2f2f2] px-[16px] py-[6px] rounded-[50px] text-[16px] text-[#5c5c5c]"
             >
-              সার্বজনীন
+              বিদ্যুৎ
             </button>
           </div>
           <div class="flex gap-3 mt-[24px]">
@@ -323,7 +343,7 @@
           </div>
         </figure>
         <figure
-          class="bg-white p-[20px] mb-[30px] lg:mb-0 lg:p-[32px] rounded-[12px] shadow-lg"
+          class="lg:w-[350px] bg-white p-[20px] mb-[30px] lg:mb-0 lg:p-[32px] rounded-[12px] shadow-lg"
         >
           <div class="flex items-center justify-between mb-[16px]">
             <div
@@ -338,13 +358,13 @@
             <i class="fa-regular fa-heart"></i>
           </div>
           <div>
-            <h3 class="text-[18px] font-bold">জাতীয় জরুরি সেবা</h3>
-            <p class="mb-[24px] text-lg text-[#5c5c5c]">National Emergency</p>
-            <h3 class="text-[28px] font-bold">999</h3>
+            <h3 class="text-[18px] font-bold">ব্র্যাক</h3>
+            <p class="mb-[24px] text-lg text-[#5c5c5c]">Brac</p>
+            <h3 class="text-[28px] font-bold">16445</h3>
             <button
               class="bg-[#f2f2f2] px-[16px] py-[6px] rounded-[50px] text-[16px] text-[#5c5c5c]"
             >
-              সার্বজনীন
+              এনজিও
             </button>
           </div>
           <div class="flex gap-3 mt-[24px]">
@@ -361,7 +381,7 @@
           </div>
         </figure>
         <figure
-          class="bg-white p-[20px] mb-[30px] lg:mb-0 lg:p-[32px] rounded-[12px] shadow-lg"
+          class="lg:w-[350px] bg-white p-[20px] mb-[30px] lg:mb-0 lg:p-[32px] rounded-[12px] shadow-lg"
         >
           <div class="flex items-center justify-between mb-[16px]">
             <div
@@ -376,13 +396,13 @@
             <i class="fa-regular fa-heart"></i>
           </div>
           <div>
-            <h3 class="text-[18px] font-bold">জাতীয় জরুরি সেবা</h3>
-            <p class="mb-[24px] text-lg text-[#5c5c5c]">National Emergency</p>
-            <h3 class="text-[28px] font-bold">999</h3>
+            <h3 class="text-[18px] font-bold">বাংলাদেশ রেলওয়ে</h3>
+            <p class="mb-[24px] text-lg text-[#5c5c5c]">Bangladesh Railway</p>
+            <h3 class="text-[28px] font-bold">163</h3>
             <button
               class="bg-[#f2f2f2] px-[16px] py-[6px] rounded-[50px] text-[16px] text-[#5c5c5c]"
             >
-              সার্বজনীন
+              পরিবহন
             </button>
           </div>
           <div class="flex gap-3 mt-[24px]">
@@ -396,70 +416,32 @@
             >
               <i class="fa-solid fa-phone"></i> Call
             </button>
-          </div>
-        </figure>
-        <figure
-          class="bg-white p-[20px] mb-[30px] lg:mb-0 lg:p-[32px] rounded-[12px] shadow-lg"
-        >
-          <div class="flex items-center justify-between mb-[16px]">
-            <div
-              class="bg-red-200 w-[48px] h-[48px] lg:w-[60px] lg:h-[60px] flex justify-center items-center rounded-[16px]"
-            >
-              <img
-                class="w-[24px] h-[24px] lg:w-[32px] lg:h-[32px]"
-                src="assets/emergency.png"
-                alt=""
-              />
-            </div>
-            <i class="fa-regular fa-heart"></i>
-          </div>
-          <div>
-            <h3 class="text-[18px] font-bold">জাতীয় জরুরি সেবা</h3>
-            <p class="mb-[24px] text-lg text-[#5c5c5c]">National Emergency</p>
-            <h3 class="text-[28px] font-bold">999</h3>
-            <button
-              class="bg-[#f2f2f2] px-[16px] py-[6px] rounded-[50px] text-[16px] text-[#5c5c5c]"
-            >
-              সার্বজনীন
-            </button>
-          </div>
-          <div class="flex gap-3 mt-[24px]">
-            <button
-              class="flex-1 border border-[#d4d6d5] rounded-[8px] text-[1rem] text-[#5c5c5c] py-[6px] lg:py-[10px]"
-            >
-              <i class="fa-regular fa-copy"></i> Copy
-            </button>
-            <button
-              class="flex-1 text-white bg-[#00a63e] rounded-[8px] text-[1rem] py-[6px] lg:py-[10px]"
-            >
-              <i class="fa-solid fa-phone"></i> Call
-            </button>
-          </div>
-        </figure>
-        <figure
-          class="lg:hidden bg-white p-[20px] mb-[30px] lg:p-[32px] rounded-[12px] shadow-lg row-span-4"
-        >
-          <div class="flex justify-between items-center rounded-[12px]">
-            <h3 class="text-xl font-semibold">
-              <i class="fa-solid fa-clock-rotate-left"></i> Call History
-            </h3>
-            <button
-              class="text-white bg-[#00a63e] px-[36px] py-[14px] text-[1rem] rounded-[50px]"
-            >
-              Clear
-            </button>
-          </div>
-          <div
-            class="rounded-[8px] px-[18px] py-[16px] my-[16px] flex justify-between items-center bg-gray-100"
-          >
-            <div>
-              <h3 class="text-sm font-semibold">ফায়ার সার্ভিস</h3>
-              <p class="text-[#5c5c5c] font-semibold">999</p>
-            </div>
-            <div class="text-xs">11:36:58 AM</div>
           </div>
         </figure>
       </div>
+      <figure
+        class="lg:w-[350px] mx-auto bg-white p-[20px] lg:mb-0 mb-[30px] lg:p-[32px] rounded-[12px] shadow-lg"
+      >
+        <div class="flex justify-between items-center rounded-[12px]">
+          <h3 class="text-xl font-semibold">
+            <i class="fa-solid fa-clock-rotate-left"></i> Call History
+          </h3>
+          <button
+            class="text-white bg-[#00a63e] px-[36px] py-[14px] text-[1rem] rounded-[50px]"
+          >
+            Clear
+          </button>
+        </div>
+        <div
+          class="rounded-[8px] px-[18px] py-[16px] my-[16px] flex justify-between items-center bg-gray-100"
+        >
+          <div>
+            <h3 class="text-sm font-semibold">ফায়ার সার্ভিস</h3>
+            <p class="text-[#5c5c5c] font-semibold">999</p>
+          </div>
+          <div class="text-xs">11:36:58 AM</div>
+        </div>
+      </figure>
     </section>
   </body>
 </html>
