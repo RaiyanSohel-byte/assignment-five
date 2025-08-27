@@ -49,3 +49,14 @@ const clearButton = document.getElementById("clear-button");
 clearButton.addEventListener("click", () => {
   callHistory.innerHTML = "";
 });
+
+//clicking copy button
+let copyCount = 0;
+const copyButton = document.querySelectorAll(`.copy-button`);
+copyButton.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const copyNum = document.getElementById("copy-number");
+    copyCount++;
+    copyNum.innerText = `${copyCount} Copy`;
+  });
+});
