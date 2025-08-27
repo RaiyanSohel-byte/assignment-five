@@ -15,9 +15,14 @@ heartIcon.forEach((icon) => {
 //clicking call button
 callButton.forEach((btn) => {
   btn.addEventListener("click", () => {
-    countCoin = countCoin - 20;
-    coin.innerText = countCoin;
-    if (countCoin < 20) {
+    if (countCoin >= 20) {
+      const card = btn.closest("figure");
+      const serviceName = card.querySelector(`.service-name`).innerText;
+      const serviceNum = card.querySelector(`.service-number`).innerText;
+      countCoin = countCoin - 20;
+      coin.innerText = countCoin;
+      alert(`Calling ${serviceName} : ${serviceNum}`);
+    } else {
       alert("Not enough coin");
     }
   });
