@@ -56,6 +56,7 @@ const copyButton = document.querySelectorAll(`.copy-button`);
 copyButton.forEach((btn) => {
   btn.addEventListener("click", () => {
     const copyNum = document.getElementById("copy-number");
+    alert("Number Copied!");
     copyCount++;
     copyNum.innerText = `${copyCount} Copy`;
   });
