@@ -13,6 +13,7 @@ heartIcon.forEach((icon) => {
 });
 
 //clicking call button
+const callHistory = document.getElementById("call-history");
 callButton.forEach((btn) => {
   btn.addEventListener("click", () => {
     if (countCoin >= 20) {
@@ -21,9 +22,30 @@ callButton.forEach((btn) => {
       const serviceNum = card.querySelector(`.service-number`).innerText;
       countCoin = countCoin - 20;
       coin.innerText = countCoin;
+      const time = new Date().toLocaleTimeString("en-US", {
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: true,
+      });
+      callHistory.innerHTML += ` <div
+          class="rounded-[8px] px-[18px] py-[16px] my-[16px] flex justify-between items-center bg-gray-100"
+        >
+          <div>
+            <h3 class="text-sm font-semibold">${serviceName}</h3>
+            <p class="text-[#5c5c5c] font-semibold">${serviceNum}</p>
+          </div>
+          <div class="text-xs">${time}</div>
+        </div>`;
       alert(`Calling ${serviceName} : ${serviceNum}`);
     } else {
       alert("Not enough coin");
     }
   });
+});
+
+//clicking clear button
+const clearButton = document.getElementById("clear-button");
+clearButton.addEventListener("click", () => {
+  callHistory.innerHTML = "";
 });
