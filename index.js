@@ -37,7 +37,7 @@ callButton.forEach((btn) => {
           </div>
           <div class="text-xs">${time}</div>
         </div>`;
-      alert(`Calling ${serviceName} : ${serviceNum}`);
+      alert(`Calling ${serviceName} ${serviceNum}`);
     } else {
       alert("Not enough coin");
     }
