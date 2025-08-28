@@ -28,6 +28,7 @@ callButton.forEach((btn) => {
         second: "2-digit",
         hour12: true,
       });
+
       const div1 = document.createElement("div");
       div1.className =
         "rounded-[8px] px-[18px] py-[16px] my-[16px] flex justify-between items-center bg-gray-100";
@@ -51,6 +52,7 @@ callButton.forEach((btn) => {
       div1.appendChild(div2);
       div1.appendChild(div3);
       callHistory.appendChild(div1);
+
       alert(`📞 Calling ${serviceName} ${serviceNum}`);
     } else {
       alert("❌ আপনার পর্যাপ্ত কয়েন নেই! কল করতে কমপক্ষে ২০ কয়েন লাগবে।");
