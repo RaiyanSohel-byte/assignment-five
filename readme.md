@@ -16,5 +16,5 @@
    It is useful because, it makes the codes cleaner as we don't need to add multiple eventListeners for every child elements. Which also enhances the performance of the webpage. We can add more child elements later and don't need to re add the eventListeners as the child element already has eventListener attached to it's parent.
 
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
-   Ans: preventDefault(): It prevents the default behavior an element. For example, it stops form from submitting automatically.
+   Ans: preventDefault(): It prevents the default behavior of an element. For example, it stops form from submitting automatically.
    stopPropagation(): It prevents the event from bubbling or capturing.
