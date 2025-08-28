@@ -28,15 +28,29 @@ callButton.forEach((btn) => {
         second: "2-digit",
         hour12: true,
       });
-      callHistory.innerHTML += ` <div
-          class="rounded-[8px] px-[18px] py-[16px] my-[16px] flex justify-between items-center bg-gray-100"
-        >
-          <div>
-            <h3 class="text-sm font-semibold">${serviceName}</h3>
-            <p class="text-[#5c5c5c] font-semibold">${serviceNum}</p>
-          </div>
-          <div class="text-xs">${time}</div>
-        </div>`;
+      const div1 = document.createElement("div");
+      div1.className =
+        "rounded-[8px] px-[18px] py-[16px] my-[16px] flex justify-between items-center bg-gray-100";
+
+      const div2 = document.createElement("div");
+
+      const div3 = document.createElement("div");
+      div3.className = "text-xs";
+      div3.innerText = time;
+
+      const h3 = document.createElement("h3");
+      h3.className = "text-sm font-semibold";
+      h3.innerText = serviceName;
+
+      const p = document.createElement("p");
+      p.className = "text-[#5c5c5c] font-semibold";
+      p.innerText = serviceNum;
+
+      div2.appendChild(h3);
+      div2.appendChild(p);
+      div1.appendChild(div2);
+      div1.appendChild(div3);
+      callHistory.appendChild(div1);
       alert(`📞 Calling ${serviceName} ${serviceNum}`);
     } else {
       alert("❌ আপনার পর্যাপ্ত কয়েন নেই! কল করতে কমপক্ষে ২০ কয়েন লাগবে।");
